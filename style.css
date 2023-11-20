@@ -15,12 +15,13 @@
 }
 
 .header {
-  background-color: green;
+  background-color: #e55604;
   grid-area: header;
 }
 
 .sidebar {
-  background-color: aqua;
+  background-color: #26577c;
+  color: #f6f5f0;
   grid-area: side;
   padding: 1rem;
 }
@@ -31,24 +32,31 @@
 }
 
 .nav {
+  font-size: 1.2rem;
   list-style: none;
-  margin-top: 2rem;
+  margin-top: 3.5rem;
   display: grid;
+  gap: 10px;
+}
+
+.nav-item {
+  display: grid;
+}
+
+.nav-item a {
+  display: flex;
   align-items: center;
-  gap: 1rem;
 }
 
 .nav a {
   color: #333;
   text-decoration: none;
-  display: grid;
-  grid-auto-flow: column;
-  align-items: center;
-  align-items: center;
+  color: #f6f5f0;
 }
 
 .nav img {
   max-width: 30px;
+  margin-right: 1rem;
 }
 
 .title {
@@ -57,6 +65,6 @@
 }
 
 .main-content {
-  background-color: yellow;
+  background-color: #b4b4b3;
   grid-area: main;
 }
