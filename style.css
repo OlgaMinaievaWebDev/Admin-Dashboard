@@ -30,6 +30,27 @@
   margin-right: 0.5rem;
 }
 
+.nav {
+  list-style: none;
+  margin-top: 2rem;
+  display: grid;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav a {
+  color: #333;
+  text-decoration: none;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  align-items: center;
+}
+
+.nav img {
+  max-width: 30px;
+}
+
 .title {
   display: flex;
   align-items: center;
