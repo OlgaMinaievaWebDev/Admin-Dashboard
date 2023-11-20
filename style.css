@@ -22,6 +22,17 @@
 .sidebar {
   background-color: aqua;
   grid-area: side;
+  padding: 1rem;
+}
+
+.sidebar img {
+  max-width: 50px;
+  margin-right: 0.5rem;
+}
+
+.title {
+  display: flex;
+  align-items: center;
 }
 
 .main-content {
