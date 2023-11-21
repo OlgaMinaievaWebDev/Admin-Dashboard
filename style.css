@@ -44,7 +44,8 @@ input {
   color: #042239;
 }
 
-.account div {
+.account div,
+.picture {
   background: url("./resources/icons/avatar.png") center center / cover
     no-repeat;
   width: 50px;
@@ -57,6 +58,39 @@ input {
   grid-template-columns: 40px 1fr;
   align-items: center;
   margin-right: 2rem;
+}
+
+.bottom {
+  color: #042239;
+  display: grid;
+  grid-template-columns: 80px 2fr 2fr;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn {
+  min-width: 100px;
+  height: 35px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background: #26577c;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #26577c;
 }
 
 .sidebar {
