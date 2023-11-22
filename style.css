@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 .dashboard {
@@ -148,9 +151,9 @@ input {
   grid-template-columns: 1fr auto;
   grid-template-rows: min-content 1fr;
   gap: 2fr;
-  grid-template-areas: 
-  'project announcement'
-  'project trending';
+  grid-template-areas:
+    "project announcement"
+    "project trending";
   overflow: auto;
 }
 
@@ -158,12 +161,19 @@ input {
   grid-area: project;
 }
 
+.projects h2 {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  color: #26577c;
+}
+
 .cards {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-grid-auto-rows: 250px;
-gap: 2rem;
-padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 250px;
+  gap: 2rem;
+  padding: 2rem;
 }
 
 .card {
@@ -174,6 +184,23 @@ padding: 2rem;
   border-left: 10px solid #26577c;
   background-color: #f6f4ed;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.card h3 {
+  color: #e55604;
+}
+
+.card p {
+  line-height: 1.2;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1rem;
+  margin-top: auto;
 }
 
 .actions img {
