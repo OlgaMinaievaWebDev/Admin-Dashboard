@@ -152,9 +152,10 @@ input {
   grid-template-rows: min-content 1fr;
   gap: 2fr;
   grid-template-areas:
-    "project announcement"
+    "project announcements"
     "project trending";
   overflow: auto;
+  padding-right: 2rem;
 }
 
 .projects {
@@ -192,7 +193,7 @@ input {
 
 .card p {
   line-height: 1.2;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   margin-top: 10px;
 }
 
@@ -206,9 +207,44 @@ input {
 .actions img {
   max-width: 30px;
 }
+
 .announcements {
   grid-area: announcements;
 }
+
+.announcements h2 {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #26577c;
+}
+
+.announcement h5 {
+  color: #e55604;
+}
+
+.card .announcement {
+  max-width: 25ch;
+}
+
+.announcement {
+  width: 100%;
+  padding-top: 0.5rem;
+}
+.announcement:first-child {
+  padding-top: 0;
+}
+.announcement:nth-child(2) {
+  padding-top: 1rem;
+}
+.announcement:last-child {
+  padding-top: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
 .trending {
   grid-area: trending;
 }
